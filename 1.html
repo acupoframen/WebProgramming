@@ -1,12 +1,42 @@
 <!doctype html>
 <html>
-    <title>Hwan's HTML world</title>
+    <h1>Hwan's HTML world</h1>
     <meta charset="utf-8">
 <head>
-    <p style="color:greenyellow">made by Hypertext Markup Language (HTML)</style>
-    <style>a{ color:skyblue; text-decoration:none}</style>
+    <style>
+        *{
+            background-color: gray;
+        }
+        * p {
+            background-color: green;
+        }
+        a{ color:black; text-decoration:none}
+        h1 {
+            font-size:250%;
+            text-align: center;
+            border-width: 5px;
+            border-color:cornflowerblue;
+            border-style: solid;
+            display:inline;
+            }
+
+        .saw{
+            color:goldenrod;
+            padding:20px;
+            margin:0;
+        }
+        #active{
+            color:red;
+        }
+        #grid{
+            border:5px solid pink;
+            display: grid;
+            grid-template-columns: 500px 1fr;
+        }
+    </style>
 </head>
 <body>
+    <p style="color:greenyellow">made by Hypertext Markup Language (HTML)</style>
     <p><strong>hello my name is <u>Hwan</u></strong></p>
     <img src="codingPic.jpg" width="50%">
     <p style="margin-top:100px"> Guten Tag, ich heisse Hwan</p>
@@ -23,13 +53,30 @@
         <li>guten tag</li>
         <li>annyeong</li>
     </ul>
-</p>
+    </p>
+        <div id="grid">
+            <div>NAVIGATION</div>
+            <div>Send & receive text & voice messages in Messages
+                You can send and receive text messages with friends and contacts on Messages.
+                
+                Important: Some of these steps only work on Android 6.0 and up. Learn how to check your Android version.
+                Start a conversation
+                Open the Messages app . 
+                Tap Compose Compose.
+                In "To," enter the names, phone numbers, or email addresses that you'd like to message. You can also pick from your top contacts or your whole contact list.
+                Send a message
+                Tap the message box.
+                Enter your message. If you'd like to save it as a draft and go back, tap Back Back.
+                When you’re done, tap Send Send. 
+                Tip: Learn how to share contacts in your messages.
+                
+                Send a voice message</div> 
+        </div>
+        <p>
+            <a href="https://www.google.com/" class="saw"  target="_blank" title="google">Google Here!</a></p>
 
-<p>
-    <a href="https://www.google.com/" target="_blank" title="google">Google Here!</a></p>
-
-<p>
-    <a href="2.html" target="_blank" title="what is one plus one"> What is 1+1?</a>
-</p>
-</body>
-</html>
+        <p>
+            <a href="2.html" target="_blank" class="saw" id="active" title="what is one plus one"> What is 1+1?</a>
+        </p>
+        </body>
+        </html>
