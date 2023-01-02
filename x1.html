@@ -14,9 +14,11 @@
         <input type="text" onchange="alert('changed')">
         <input type="text" onkeydown="alert('key down!')">
 
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';" >
+        <input type="button" value="night" onclick= 
+        "document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white' 
+        " >
+
         <input type="button" value="day" onclick="
         document.querySelector('body').style.backgroundColor = 'white';
         document.querySelector('body').style.color = 'black';">
@@ -34,7 +36,19 @@
             document.querySelector('body').style.color = 'black';
             document.querySelector('#night_day').value='night';
         }">
-        
+
+        <input type="button" value="night/day" onclick="
+        var target= document.querySelector('body');
+        if(this.value==='night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value='day';
+        }
+        else{
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value='night';
+        }">
 
     </body>
 </html>
